@@ -1,0 +1,39 @@
+# Material type for the sword
+Material: "DIAMOND_SWORD"
+
+# Display name of the sword (supports MiniMessage format)
+Display-Name: "<light_purple>LifeSteal"
+
+# Lore lines for the sword (supports MiniMessage format)
+Lore:
+  - "<gold>A mystical sword that steals life from enemies"
+  - "<red>❤ Heals you when dealing damage"
+  - ""
+  - "<dark_gray>Life Steal: <yellow>{lifeStealPercent}%"
+
+# Whether the sword should appear enchanted
+isEnchanted: true
+
+# List of enchantments to apply
+Enchantments:
+  - "SHARPNESS:3"
+  - "UNBREAKING:2"
+  - "MENDING:1"
+
+# Percentage of damage dealt that is converted to health
+lifeStealPercent: 15
+
+messages:
+  playerGiveHimself: "<green>You have been blessed with <aqua>%item%</aqua><green>!</green>"
+  playerGaveAnother: "<green>You gave <aqua>%item%</aqua> to <blue>%player%</blue><green>!</green>"
+  playerReceivedFrom: "<green>You received <aqua>%item%</aqua> from <blue>%player%</blue><green>!</green>"
+
+
+
+  # Supported placeholders:
+  # %damager%    - Name of the player that caused the damage
+  # %amount%     - Amount of damage dealt (or healed)
+  # %damaged%     - Name of the entity that was damaged
+  # %oldhealth%  - Player's health before the damage
+  heal-alert: "<green>You were healed by <red>%amount% <green>hearts!"
+

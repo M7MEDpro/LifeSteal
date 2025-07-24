@@ -1,0 +1,4 @@
+name: LifeSteal
+version: '1.0-SNAPSHOT'
+main: dev.m7med.lifesteal.LifeSteal
+api-version: '1.21'
