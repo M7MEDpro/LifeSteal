@@ -19,7 +19,7 @@ public class DamageListener implements Listener {
         Entity damager = event.getDamager();
         if(!(damager instanceof Player)) return;
         ItemStack item = ((Player) damager).getItemInHand();
-        if(item == null) return;
+        if (item == null || item.getType() == Material.AIR || !item.hasItemMeta()) return;
         PersistentDataContainer container = item.getItemMeta().getPersistentDataContainer();
         if(container.has(LifeSteal.getInstance().key, PersistentDataType.BOOLEAN)){
             if(LifeStealChance()){
